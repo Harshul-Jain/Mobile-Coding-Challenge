@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_login.*
 class LoginActivity : AppCompatActivity() {
     var user_name: String = ""
     var passw: String = ""
-    
+
     //TextWatcher object
     private var mTextWatcher = object : TextWatcher {
         override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
