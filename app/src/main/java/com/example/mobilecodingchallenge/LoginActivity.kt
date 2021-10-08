@@ -1,5 +1,6 @@
 package com.example.mobilecodingchallenge
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -36,6 +37,11 @@ class LoginActivity : AppCompatActivity() {
         //set listeners
         username.addTextChangedListener(mTextWatcher)
         password.addTextChangedListener(mTextWatcher)
+
+        //Start Main Activity on Clicking the Login Button
+        loginBtn.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
     }
 
 }
