@@ -45,13 +45,16 @@
     </LinearLayout>
 
     <EditText
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="10dp"
         android:hint="@string/username"
-        android:imeOptions="actionDone"
+        android:imeActionLabel="Send"
+        android:imeOptions="actionUnspecified"
+        android:inputType="text"
         android:textColor="@color/black"
         android:textSize="16sp" />
 
@@ -82,13 +85,16 @@
     </LinearLayout>
 
     <EditText
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="10dp"
         android:hint="@string/password"
+        android:imeActionLabel="Send"
         android:inputType="textPassword"
+        android:maxLines="1"
         android:textSize="16sp" />
 
     <TextView
@@ -98,12 +104,14 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
+        android:maxLines="1"
         android:text=" * - mandatory fields "
         android:textColor="@color/light_red"
         android:textSize="12sp"
         android:textStyle="italic|bold" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
