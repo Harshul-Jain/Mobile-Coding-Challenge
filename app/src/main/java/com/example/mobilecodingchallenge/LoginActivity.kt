@@ -69,7 +69,7 @@ class LoginActivity : AppCompatActivity() {
 
         //Start Main Activity on Clicking the Login Button
         loginBtn.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java).putExtra("USERNAME",username))
         }
     }
 
