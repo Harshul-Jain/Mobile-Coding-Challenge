@@ -45,7 +45,7 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/usernameEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -54,9 +54,9 @@
         android:hint="@string/username"
         android:imeActionLabel="Send"
         android:imeOptions="actionUnspecified"
-        android:inputType="text"
         android:textColor="@color/black"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -85,7 +85,7 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/passwordEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
