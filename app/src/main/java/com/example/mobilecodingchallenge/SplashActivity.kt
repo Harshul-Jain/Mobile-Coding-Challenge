@@ -21,8 +21,4 @@ class SplashActivity : AppCompatActivity() {
         }
     }
 
-    override fun onPause() {
-        activityScope.cancel()
-        super.onPause()
-    }
 }
